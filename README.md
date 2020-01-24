@@ -2,8 +2,6 @@
 
 JIWOON WON, SANGHYUK SON
 
-**rucy** -> something changed for rucy. 
-
 ## Modify Requirements
 
 1. what we do(fashion, visual art(f13, artwork), high tech)
