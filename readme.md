@@ -16,7 +16,7 @@ JIWOON WON, SANGHYUK SON
 
 5. 전체적인 정보는: 
 
-   [rucy test version]: http://rucy.tech
+   http://rucy.tech 참고!
 
    비밀번호 rucy10 
 
