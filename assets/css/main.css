@@ -644,10 +644,10 @@ button
 
     color: #fff;
     background: #fff;
-    background: -webkit-linear-gradient(left, rgb(251, 204, 10) 1%,rgba(0,0,0,0) 100%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(1%, rgb(251, 204, 10)),to(rgba(0,0,0,0)));
-    background:      -o-linear-gradient(left, rgb(251, 204, 10) 1%,rgba(0,0,0,0) 100%);
-    background:         linear-gradient(to right, rgb(251, 204, 10) 1%,rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(left, rgba(143,151,219,1) 1%,rgba(0,0,0,0) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(1%, rgba(143,151,219,1)),to(rgba(0,0,0,0)));
+    background:      -o-linear-gradient(left, rgba(143,151,219,1) 1%,rgba(0,0,0,0) 100%);
+    background:         linear-gradient(to right, rgba(143,151,219,1) 1%,rgba(0,0,0,0) 100%);
 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f97db', endColorstr='#00000000',GradientType=1 );
 }
@@ -760,7 +760,7 @@ button
     padding: 0;
 
     border-bottom: 0;
-    background: rgba(251, 204, 10, 0.7);
+    background: rgba(140, 148, 216, .7);
 }
 
 .featherlight .featherlight-content  .featherlight-close-icon
