@@ -15,6 +15,7 @@
         <!-- STYLESHEETS -->
         <link rel="stylesheet" type="text/css" href="assets/css/plugins.css">
         <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/header-fixed.css">
     </head>
     <body>
         <!-- PRELOADER -->
@@ -22,6 +23,21 @@
             <div class="spinner"></div>
         </div>
         <!-- /PRELOADER -->
+		<header class="header-fixed">
+			<div class="header-limiter">
+				<h1><a href="#">Company<span>logo</span></a></h1>
+				<nav>
+					<a href="#">Home</a>
+					<a href="#" class="selected">Blog</a>
+					<a href="#">Pricing</a>
+					<a href="#">About</a>
+					<a href="#">Faq</a>
+					<a href="#">Contact</a>
+				</nav>
+			</div>
+		</header>
+		<!-- You need this element to prevent the content of the page from jumping up -->
+		<div class="header-fixed-placeholder"></div>
         
         <!-- IMAGE CONTAINER -->
         <div class="image-container">
@@ -39,8 +55,7 @@
                     <div class="container-mid">
                         <!-- ANIMATION CONTAINER -->
                         <div class="animation-container animation-fade-right" data-animation-delay="0">
-                            <h1>better day,</h1>
-							<h1>rucy</h1>
+                            <h1>better day,<br/>rucy</h1>
                         </div>
                         <!-- /ANIMATION CONTAINER -->
                         
@@ -72,12 +87,12 @@
                 
                 <!-- SERVICE -->
                 <section id="service">
-                    <h3 class="headline scroll-animated">Services</h3>
+                    <h3 class="headline scroll-animated">Projects</h3>
                     <!-- SERVICE LIST -->
                     <ul class="services-list">
                         <!-- SERVICE ITEM -->
                         <li class="service-item scroll-animated">
-                            <button class="btn btn-primary collapsed" type="button" data-toggle="collapse" data-target="#collapse-item-1" aria-expanded="false">Webdesign</button>
+                            <button class="btn btn-primary collapsed" type="button" data-toggle="collapse" data-target="#collapse-item-1" aria-expanded="false">fashion</button>
                             <!-- COLLAPSE CONTENT -->
                             <div class="collapse" id="collapse-item-1">
                                 <!-- COLLAPSE CONTENT INNER -->
@@ -92,7 +107,7 @@
                         
                         <!-- SERVICE ITEM -->
                         <li class="service-item scroll-animated">
-                            <button class="btn btn-primary collapsed" type="button" data-toggle="collapse" data-target="#collapse-item-2" aria-expanded="false">Marketing</button>
+                            <button class="btn btn-primary collapsed" type="button" data-toggle="collapse" data-target="#collapse-item-2" aria-expanded="false">visual art</button>
                             <!-- COLLAPSE CONTENT -->
                             <div class="collapse" id="collapse-item-2">
                                 <!-- COLLAPSE CONTENT INNER -->
@@ -107,24 +122,9 @@
                         
                         <!-- SERVICE ITEM -->
                         <li class="service-item scroll-animated">
-                            <button class="btn btn-primary collapsed" type="button" data-toggle="collapse" data-target="#collapse-item-3" aria-expanded="false">Analytics</button>
+                            <button class="btn btn-primary collapsed" type="button" data-toggle="collapse" data-target="#collapse-item-3" aria-expanded="false">high tech</button>
                             <!-- COLLAPSE CONTENT -->
                             <div class="collapse" id="collapse-item-3">
-                                <!-- COLLAPSE CONTENT INNER -->
-                                <div class="well">
-                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mattis magna ac justo tincidunt, nec rhoncus leo rutrum. Duis mattis, neque id consectetur gravida, ligula massa consequat mi, id ultricies massa mauris eu augue. Donec dictum diam vitae dui iaculis, vitae laoreet sem molestie.</p>
-                                </div>
-                                <!-- /COLLAPSE CONTENT INNER -->
-                            </div>
-                            <!-- /COLLAPSE CONTENT -->
-                        </li>
-                        <!-- /SERVICE ITEM -->
-                        
-                        <!-- SERVICE ITEM -->
-                        <li class="service-item scroll-animated">
-                            <button class="btn btn-primary collapsed" type="button" data-toggle="collapse" data-target="#collapse-item-4" aria-expanded="false">UI &amp; UX Design</button>
-                            <!-- COLLAPSE CONTENT -->
-                            <div class="collapse" id="collapse-item-4">
                                 <!-- COLLAPSE CONTENT INNER -->
                                 <div class="well">
                                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mattis magna ac justo tincidunt, nec rhoncus leo rutrum. Duis mattis, neque id consectetur gravida, ligula massa consequat mi, id ultricies massa mauris eu augue. Donec dictum diam vitae dui iaculis, vitae laoreet sem molestie.</p>
@@ -270,21 +270,21 @@
                 <!-- /WORK -->
                 
                 <!-- CONTACT -->
-                <section id="contact">
-                    <h3 class="headline scroll-animated">Contact Me</h3>
+                <!-- <section id="contact"> -->
+                    <!-- <h3 class="headline scroll-animated">Contact Me</h3> -->
                     <!-- CONTACT FORM --> 
-                    <form id="contact-form" action="assets/php/contact.php" method="post">
-                        <input id="contact-form-name" type="text" name="name" class="form-control scroll-animated" placeholder="* Your Name">
-                        <input id="contact-form-email" type="text" name="email" class="form-control scroll-animated" placeholder="* Your Email">
+                    <!-- <form id="contact-form" action="assets/php/contact.php" method="post"> -->
+                        <!-- <input id="contact-form-name" type="text" name="name" class="form-control scroll-animated" placeholder="* Your Name"> -->
+                        <!-- <input id="contact-form-email" type="text" name="email" class="form-control scroll-animated" placeholder="* Your Email"> -->
                         <!-- PHANTOM ELEMENT ( HONEYPOT CAPTCHA FOR SECURITY ) -->
-                        <div class="fhp-input"><input id="contact-form-company" type="text" name="company" class="form-control"></div>
+                        <!-- <div class="fhp-input"><input id="contact-form-company" type="text" name="company" class="form-control"></div> -->
                         <!-- /PHANTOM ELEMENT ( HONEYPOT CAPTCHA FOR SECURITY ) -->
-                        <textarea id="contact-form-message" name="message" class="form-control scroll-animated" placeholder="* Your Message"></textarea>
-                        <button type="submit" class="form-control scroll-animated">Send Message<div class="circle"><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i></div></button>
-                        <div class="success-message"><i class="fa fa-check" aria-hidden="true"></i>The Email was Sent Successfully!</div>
-                    </form>
+                        <!-- <textarea id="contact-form-message" name="message" class="form-control scroll-animated" placeholder="* Your Message"></textarea> -->
+                        <!-- <button type="submit" class="form-control scroll-animated">Send Message<div class="circle"><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i></div></button> -->
+                        <!-- <div class="success-message"><i class="fa fa-check" aria-hidden="true"></i>The Email was Sent Successfully!</div> -->
+                    <!-- </form> -->
                     <!-- /CONTACT FORM --> 
-                </section>
+                <!-- </section> -->
                 <!-- /CONTACT -->
                 
                 <!-- FOOTER -->
@@ -297,7 +297,10 @@
                         <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                     </ul>
                     <!-- /SOCIAL ICONS -->
-                    <p class="scroll-animated">© 2017 Your Brand | Design by <a href="https://templatefoundation.com">Template Foundation</a></p>
+                    <p class="scroll-animated">
+						RUCY SHENZHEN COMMERCE COMMERCE CO. LTD.
+						<br />copyright © 2020 all rights reserved
+					</p>
                 </section>
                 <!-- /FOOTER -->
             </div>
@@ -308,5 +311,6 @@
         <!-- JAVASCRIPTS -->
         <script type="text/javascript" src="assets/js/plugins.js"></script>
         <script type="text/javascript" src="assets/js/main.js"></script>
+		<script tyep="text/javascript" src="assets/js/header-fixed.js"></script>
     </body> 
 </html>
