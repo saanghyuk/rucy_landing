@@ -1,4 +1,4 @@
-2020/1/24 
+2020/1/24 ~
 
 JIWOON WON, SANGHYUK SON
 
@@ -8,13 +8,15 @@ JIWOON WON, SANGHYUK SON
 
 1. **ethan-master.zip** -> Original Template File(Link, <https://themewagon.com/?s=one+page>)
 
-2. **rucy** -> something changed for rucy. 
+2. **rucy** 랜딩 페이지로 사용. 
 
-3. 지금 템플릿이 깔끔한거 같아서(여러 중국 친구들한테 물어보니깐 깔끔하다고 하더라고), 전체적인 폼은 그대로 가면 될것 같음. 정보가 많아지면 네브바가 있어도 괜찮을거 같음. 
+3. 지금 템플릿이 깔끔한거 같아서(여러 중국 친구들한테 물어보니깐 깔끔하다고 하더라고), 전체적인 폼은 그대로 가면 될것 같음. 
 
-4. 전체적인 정보는: rucy.tech 참고, 비밀번호 rucy10 
+4. 정보가 많아지면 네브바가 있어도 괜찮을거 같음. 네브바 누르면 해당 구간으로 sliding 이동하는 네브바? 깔끔할거 같음.
 
-5. 중국은 보통 모바일 트래픽이 85%, 웹 트레픽이 15% 정도.
+5. 전체적인 정보는: rucy.tech 참고, 비밀번호 rucy10 
+
+6. 중국은 보통 모바일 트래픽이 85%, 웹 트레픽이 15% 정도.
 
    ​
 
@@ -26,6 +28,7 @@ JIWOON WON, SANGHYUK SON
 
 
 **들어가야 하는 정보들**
+
 *제일 잘 보이는 곳* : 
 
 - 루시 로고(블랙, 화이트 두 버전 다)
@@ -41,14 +44,27 @@ JIWOON WON, SANGHYUK SON
 *나머지 요소*:
 
 - what we do(fashion, visual art(f13, artwork), high tech) 
-- about rucy -> 사진 1~2장? 에 글이 들어가면 될듯 
-- contact  -> E-mail, address ,phone 
+- about rucy -> 사진 1~2장? + 글로 우리에 대한 설명
+- contact  
+  1. E-mail: rucychina@163.com
+  2. address: 广东省深圳市福田区财富广场B座20E
+  3. phone :(177) 2471 7675
 
 
 
+필수:
+
+- 하단 Footer에
+
+  ### 备案号: 粤ICP备 19098792号-1
+
+  이게 반드시 들어가야 함. 
+
+  안들어가면 철퇴각? 바로 잡힘. 
 
 
-**LINK**
+
+**LINK&QR**
 
 1. 앱 QR은 image 폴더에 올려 놨음
 
