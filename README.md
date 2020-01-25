@@ -2,23 +2,25 @@
 
 JIWOON WON, SANGHYUK SON
 
-## Modify Requirements
+# Current Progress
 
-1. what we do(fashion, visual art(f13, artwork), high tech)
-2. about rucy
-3. team 구성
-4. contact
-
-## Additional Requirements
-
-### 잘 노출되어야 함
-
-1. 루시 로고 추가(Black, White 모두)
-2. 어플리케이션 QR(iOS Android)
-3. Taobao Store 링크 2개
-4. 위챗 QR
-
-### 위치 관계 없음
-
-1. Baidu 링크
-2. SNS 계정 4개
+* Navigation Bar 생성
+ * [x] 상황에 따라 다른 로고 적용
+ * [x] 메뉴 클릭 시 smooth scroll로 앵커까지 이동
+ * [ ] 모바일에 햄버거 버튼 적용
+* QR 코드 및 링크 추가
+ * [x] Google Play
+ * [x] App Store
+ * [x] Taobao (men, women page each)
+ * [x] Weibo `footer`
+ * [x] Baike Baidu `footer`
+ * [x] Wechat
+* Contact 정보 적용
+ * [x] Xiaohongshu
+ * [x] Douyin
+ * [x] email
+ * [x] phone
+* Content 공간 확보
+ * [x] What we do (텍스트 + 이미지) `템플릿 활용`
+ * [x] About rucy (텍스트) `템플릿 활용`
+ * [x] Our Team (3개 분야 각각 텍스트 + 이미지) `템플릿 활용`

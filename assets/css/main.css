@@ -878,13 +878,13 @@ button
     background: none;
 }
 
-#footer .social-icons li a i
+#footer .social-icons li a img
 {
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 25%;
 
-    width: 100%;
+    width: 50%;
 
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -892,12 +892,12 @@ button
     text-align: center;
 }
 
-#footer .social-icons li a i:first-child
+#footer .social-icons li a img:first-child
 {
     top: -50%;
 }
 
-#footer .social-icons li a:hover i:first-child
+#footer .social-icons li a:hover img:first-child
 {
     top: 50%;
 
@@ -906,18 +906,24 @@ button
             transition: .15s ease;
 }
 
-#footer .social-icons li a i:last-child
+#footer .social-icons li a img:last-child
 {
     top: 50%;
 }
 
-#footer .social-icons li a:hover i:last-child
+#footer .social-icons li a:hover img:last-child
 {
     top: 150%;
 
     -webkit-transition: .15s ease;
          -o-transition: .15s ease;
             transition: .15s ease;
+}
+
+#footer .wechat-icon
+{
+	width: 28%;
+	margin-bottom: 0.8rem;
 }
 
 #footer p
