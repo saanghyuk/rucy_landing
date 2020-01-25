@@ -10,11 +10,10 @@
     --  03. Image Container
     --  04. Content Area
     --  05. Content Area --> Intro
-    --  06. Content Area --> About
-    --  07. Content Area --> Service
-    --  08. Content Area --> Work
-    --  09. Content Area --> Contact
-    --  10. Content Area --> Footer
+    --  06. Content Area --> What We Do
+    --  07. Content Area --> About
+    --  08. Content Area --> Our Team
+    --  09. Content Area --> Footer
  
  
  ******************************************************************/
@@ -508,30 +507,30 @@ button
 
 
 
-/** 6. Content Area --> About
+/** 6. Content Area --> What We Do
 *******************************************************************/
 
-#about p
+#what p
 {
     margin-bottom: 2.2em;
 }
 
-#about p:last-child
+#what p:last-child
 {
     margin-bottom: 0;
 }
 
-#about .clients img
+#what .clients img
 {
     margin-top: 3rem;
 }
 
 
 
-/** 7. Content Area --> Service
+/** 7. Content Area --> About
 *******************************************************************/
 
-#service .services-list
+#about .services-list
 {
     margin-bottom: 0;
     padding: 0;
@@ -539,12 +538,12 @@ button
     list-style: none;
 }
 
-#service .services-list li
+#about .services-list li
 {
     display: block;
 }
 
-#service .services-list li button
+#about .services-list li button
 {
     font-size: 2.4rem;
     font-size: 2rem;
@@ -566,7 +565,7 @@ button
     border-radius: 0;
 }
 
-#service .services-list li button:after
+#about .services-list li button:after
 {
     font: normal normal normal 14px/1 FontAwesome;
     font-size: 1.7rem;
@@ -583,7 +582,7 @@ button
     color: #fff;
 }
 
-#service .services-list li .well
+#about .services-list li .well
 {
     min-height: 20px;
     margin-bottom: 0;
@@ -604,10 +603,10 @@ button
 
 
 
-/** 8. Content Area --> Work
+/** 8. Content Area --> Our Team
 *******************************************************************/
 
-#work .showcase .item
+#team .showcase .item
 {
     position: relative;
 
@@ -624,12 +623,12 @@ button
     background: #111;
 }
 
-#work .showcase .item:last-child
+#team .showcase .item:last-child
 {
     margin-bottom: 0;
 }
 
-#work .showcase .item .info
+#team .showcase .item .info
 {
     position: absolute;
     z-index: 100;
@@ -653,12 +652,12 @@ button
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f97db', endColorstr='#00000000',GradientType=1 );
 }
 
-#work .showcase .item:hover .info
+#team .showcase .item:hover .info
 {
     width: 100%;
 }
 
-#work .showcase .item .info .container-mid
+#team .showcase .item .info .container-mid
 {
     position: absolute;
     top: 50%;
@@ -672,7 +671,7 @@ button
             transform: translateY(-50%);
 }
 
-#work .showcase .item .info .container-mid h5
+#team .showcase .item .info .container-mid h5
 {
     margin: 0;
     margin-bottom: .2em;
@@ -685,7 +684,7 @@ button
     color: #fff;
 }
 
-#work .showcase .item:hover .info .container-mid h5
+#team .showcase .item:hover .info .container-mid h5
 {
     -webkit-transition: .15s ease .15s;
          -o-transition: .15s ease .15s;
@@ -697,7 +696,7 @@ button
     opacity: 1;
 }
 
-#work .showcase .item .info .container-mid p
+#team .showcase .item .info .container-mid p
 {
     position: relative;
 
@@ -712,7 +711,7 @@ button
     opacity: 0;
 }
 
-#work .showcase .item:hover .info .container-mid p
+#team .showcase .item:hover .info .container-mid p
 {
     -webkit-transition: .15s ease .2s;
          -o-transition: .15s ease .2s;
@@ -724,7 +723,7 @@ button
     opacity: 1;
 }
 
-#work .showcase .item .info .container-mid p:before
+#team .showcase .item .info .container-mid p:before
 {
     position: absolute;
     top: 50%;
@@ -741,7 +740,7 @@ button
     background: #fff;
 }
 
-#work .showcase .item .background-image
+#team .showcase .item .background-image
 {
     position: absolute;
     top: 0;
@@ -821,249 +820,7 @@ button
 }
 
 
-
-/** 9. Content Area --> Contact
-*******************************************************************/
-
-#contact #contact-form
-{
-    position: relative;
-}
-
-#contact #contact-form .fhp-input
-{
-    display: none;
-
-    pointer-events: none;
-
-    opacity: 0;
-}
-
-#contact #contact-form input,
-#contact #contact-form textarea,
-#contact #contact-form button
-{
-    font-size: 2rem;
-
-    margin-bottom: 3.4vh;
-
-    -webkit-transition: .3s ease;
-         -o-transition: .3s ease;
-            transition: .3s ease;
-
-    color: #fff;
-    border: none;
-    border-bottom: 2px solid #fff;
-    border-radius: 0;
-    outline: none !important;
-    background: none;
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
-}
-
-#contact #contact-form.success input,
-#contact #contact-form.success textarea,
-#contact #contact-form.success button
-{
-    border: none;
-}
-
-#contact #contact-form.success input,
-#contact #contact-form.success textarea,
-#contact #contact-form.success button
-{
-    line-height: 0;
-
-    height: 0;
-    margin: 0;
-    padding: 0;
-
-    opacity: 0;
-}
-
-#contact #contact-form input::-webkit-input-placeholder,
-#contact #contact-form textarea::-webkit-input-placeholder
-{
-    color: #fff;
-}
-
-#contact #contact-form input:-ms-input-placeholder,
-#contact #contact-form textarea:-ms-input-placeholder
-{
-    color: #fff;
-}
-
-#contact #contact-form input::-ms-input-placeholder,
-#contact #contact-form textarea::-ms-input-placeholder
-{
-    color: #fff;
-}
-
-#contact #contact-form input::placeholder,
-#contact #contact-form textarea::placeholder
-{
-    color: #fff;
-}
-
-#contact #contact-form input.error,
-#contact #contact-form textarea.error
-{
-    border-color: red;
-}
-
-#contact #contact-form input
-{
-    line-height: 3.2em;
-
-    height: 3.4em;
-    padding: 0;
-}
-
-#contact #contact-form textarea
-{
-    line-height: 1.7em;
-
-    min-width: 100%;
-    max-width: 100%;
-    height: 8em;
-    margin-bottom: 4.4rem;
-    padding: 0;
-    padding-top: 1em;
-}
-
-#contact #contact-form button
-{
-    line-height: 3.2em;
-
-    position: relative;
-
-    display: inline-block;
-    overflow: hidden;
-
-    width: auto;
-    height: 3.2em;
-    margin-bottom: 0;
-    padding: 0;
-
-    border: none !important;
-    background: none !important;
-}
-
-#contact #contact-form button .circle
-{
-    font-size: 1em;
-    line-height: 5rem;
-
-    position: relative;
-
-    display: inline-block;
-    overflow: hidden;
-
-    width: 5rem;
-    height: 5rem;
-    margin-left: 1em;
-
-    vertical-align: middle;
-
-    border: 2px solid #fff;
-    border-radius: 100%;
-}
-
-#contact #contact-form button .circle i
-{
-    position: absolute;
-    top: 50%;
-    left: 0;
-
-    width: 100%;
-
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-    text-align: center;
-}
-
-#contact #contact-form button .circle i:first-child
-{
-    -webkit-transform: translate(-100%,-50%);
-        -ms-transform: translate(-100%,-50%);
-            transform: translate(-100%,-50%);
-}
-
-#contact #contact-form button:hover .circle i:first-child
-{
-    -webkit-transition: .15s ease;
-         -o-transition: .15s ease;
-            transition: .15s ease;
-    -webkit-transform: translate(0,-50%);
-        -ms-transform: translate(0,-50%);
-            transform: translate(0,-50%);
-}
-
-#contact #contact-form button .circle i:last-child
-{
-    -webkit-transform: translate(0,-50%);
-        -ms-transform: translate(0,-50%);
-            transform: translate(0,-50%);
-}
-
-#contact #contact-form button:hover .circle i:last-child
-{
-    -webkit-transition: .15s ease;
-         -o-transition: .15s ease;
-            transition: .15s ease;
-    -webkit-transform: translate(100%,-50%);
-        -ms-transform: translate(100%,-50%);
-            transform: translate(100%,-50%);
-}
-
-
-#contact #contact-form .success-message
-{
-    font-size: 2rem;
-    line-height: 0;
-
-    position: relative;
-    bottom: 0;
-    left: 0;
-
-    height: 0;
-    margin-top: -1.6em;
-    padding: 0 2em;
-
-    -webkit-transition: .2s ease;
-         -o-transition: .2s ease;
-            transition: .2s ease;
-    pointer-events: none;
-
-    opacity: 0;
-    color: #fff;
-    border: 2px solid limegreen;
-    border-radius: 0;
-    background: none;
-}
-
-#contact #contact-form.success .success-message
-{
-    line-height: 6em;
-
-    height: 6em;
-
-    pointer-events: all;
-
-    opacity: 1;
-}
-
-#contact #contact-form .success-message i
-{
-    font-size: 2.4rem;
-
-    margin-right: .7em;
-}
-
-
-
-/** 10. Content Area --> Footer
+/** 09. Content Area --> Footer
 *******************************************************************/
 
 #footer .social-icons

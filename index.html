@@ -9,7 +9,7 @@
         <!-- PAGE TITLE -->
         <title>better day, rucy</title>
         <!-- FAVICON -->
-        <link rel="shortcut icon" href="assets/img/favicon.png">
+        <link rel="shortcut icon" href="assets/img/logo/rucy_favicon.png">
         <!-- FONTS -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
         <!-- STYLESHEETS -->
@@ -27,14 +27,13 @@
 		<!-- HEADER -->
 		<header class="header-fixed">
 			<div class="header-limiter">
-				<h1><a href="#">Company<span>logo</span></a></h1>
+				<a href="#">
+					<div class="header-logo"></div>
+				</a>
 				<nav>
-					<a href="#">Home</a>
-					<a href="#" class="selected">Blog</a>
-					<a href="#">Pricing</a>
-					<a href="#">About</a>
-					<a href="#">Faq</a>
-					<a href="#">Contact</a>
+					<a href="#what" class="smooth-scroll">What we do</a>
+					<a href="#about" class="smooth-scroll">About</a>
+					<a href="#team" class="smooth-scroll">Our team</a>
 				</nav>
 			</div>
 		</header>
@@ -72,8 +71,8 @@
                 </section>
                 <!-- /INTRO -->
 
-                <!-- ABOUT -->
-                <section id="about">
+                <!-- WHAT WE DO -->
+                <section id="what">
                     <h3 class="headline scroll-animated">What do we do?</h3>
                     <p class="scroll-animated">Our practice spans from environmental retrofits of existing buildings to the complete planning and design of new neighborhoods and public spaces. While our work is aesthetically diverse, our projects are linked by a focus on enhancing human relationships through architecture.</p>
                     <!-- <p class="scroll-animated">In dui augue, pretium eget vulputate at, maximus eget augue. Vestibulum porttitor a nisl in rhoncus. Etiam libero est, pellentesque eleifend arcu at, congue gravida ex. Sed et nisl ultrices, mattis purus et, commodo quam. Etiam lacus est, faucibus ut mattis sed, mattis non enim. Maecenas elementum malesuada lorem, ut vestibulum erat iaculis non. Donec nec diam id dolor hendrerit sollicitudin.</p> -->
@@ -86,16 +85,16 @@
                     </div>
                     <!-- /CLIENTS -->
                 </section>
-                <!-- /ABOUT -->
+                <!-- /WHAT WE DO -->
                 
-                <!-- SERVICE -->
-                <section id="service">
-                    <h3 class="headline scroll-animated">Projects</h3>
-                    <!-- SERVICE LIST -->
+                <!-- ABOUT -->
+                <section id="about">
+                    <h3 class="headline scroll-animated">About Rucy</h3>
+                    <!-- ABOUT LIST -->
                     <ul class="services-list">
-                        <!-- SERVICE ITEM -->
+                        <!-- ABOUT ITEM -->
                         <li class="service-item scroll-animated">
-                            <button class="btn btn-primary collapsed" type="button" data-toggle="collapse" data-target="#collapse-item-1" aria-expanded="false">fashion</button>
+                            <button class="btn btn-primary collapsed" type="button" data-toggle="collapse" data-target="#collapse-item-1" aria-expanded="false">history</button>
                             <!-- COLLAPSE CONTENT -->
                             <div class="collapse" id="collapse-item-1">
                                 <!-- COLLAPSE CONTENT INNER -->
@@ -106,11 +105,11 @@
                             </div>
                             <!-- /COLLAPSE CONTENT -->
                         </li>
-                        <!-- /SERVICE ITEM -->
+                        <!-- /ABOUT ITEM -->
                         
-                        <!-- SERVICE ITEM -->
+                        <!-- ABOUT ITEM -->
                         <li class="service-item scroll-animated">
-                            <button class="btn btn-primary collapsed" type="button" data-toggle="collapse" data-target="#collapse-item-2" aria-expanded="false">visual art</button>
+                            <button class="btn btn-primary collapsed" type="button" data-toggle="collapse" data-target="#collapse-item-2" aria-expanded="false">work</button>
                             <!-- COLLAPSE CONTENT -->
                             <div class="collapse" id="collapse-item-2">
                                 <!-- COLLAPSE CONTENT INNER -->
@@ -121,11 +120,11 @@
                             </div>
                             <!-- /COLLAPSE CONTENT -->
                         </li>
-                        <!-- /SERVICE ITEM -->
+                        <!-- /ABOUT ITEM -->
                         
-                        <!-- SERVICE ITEM -->
+                        <!-- ABOUT ITEM -->
                         <li class="service-item scroll-animated">
-                            <button class="btn btn-primary collapsed" type="button" data-toggle="collapse" data-target="#collapse-item-3" aria-expanded="false">high tech</button>
+                            <button class="btn btn-primary collapsed" type="button" data-toggle="collapse" data-target="#collapse-item-3" aria-expanded="false">vision</button>
                             <!-- COLLAPSE CONTENT -->
                             <div class="collapse" id="collapse-item-3">
                                 <!-- COLLAPSE CONTENT INNER -->
@@ -136,15 +135,15 @@
                             </div>
                             <!-- /COLLAPSE CONTENT -->
                         </li>
-                        <!-- /SERVICE ITEM -->
+                        <!-- /ABOUT ITEM -->
                     </ul>
-                    <!-- /SERVICE LIST -->
+                    <!-- /ABOUT LIST -->
                 </section>
-                <!-- /SERVICE -->
+                <!-- /ABOUT -->
                 
                 <!-- WORK -->
-                <section id="work">
-                    <h3 class="headline scroll-animated">Latest Work</h3>
+                <section id="team">
+                    <h3 class="headline scroll-animated">Our Team</h3>
                     <!-- SHOWCASE -->
                     <div class="showcase">
                         <!-- ITEM -->
@@ -155,13 +154,12 @@
                                 <div class="info">
                                     <!-- CONTAINER MID -->
                                     <div class="container-mid">
-                                        <h5>Petron</h5>
-                                        <p>Web Design</p>
+                                        <h5>Fashion</h5>
+                                        <!-- <p>Web Design</p> -->
                                     </div>
                                     <!-- /CONTAINER MID -->
                                 </div>
                                 <!-- /INFO -->
-
                                 <div class="background-image" style="background-image: url(assets/img/work/item-1.jpg)"></div>
                             </a>
                             <!-- /LIGHTBOX LINK -->
@@ -169,8 +167,8 @@
                             <!-- LIGHTBOX -->
                             <div id="item-1-lightbox" class="work-lightbox">
                                 <img class="img-responsive" src="assets/img/work/item-1.jpg" alt="image">
-                                <h3>Petron</h3>
-                                <p class="subline">Web Design</p>
+                                <h3>Fashion</h3>
+                                <p class="subline">My SubTitle!</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper faucibus eros, quis imperdiet sapien. Nam sodales nec risus nec interdum. Proin lobortis, ex condimentum ultricies eleifend, nisl nunc sollicitudin odio, eget egestas est turpis et metus. In non ligula quis mauris rutrum porta.</p>
                                 <p>Integer scelerisque et orci in maximus. Nullam ac finibus nisi. Sed libero tellus, fringilla in posuere vitae, sollicitudin consectetur odio. Morbi pharetra tortor quis risus hendrerit, ut tincidunt arcu vehicula. Integer consequat lorem nisl, sit amet euismod libero fringilla placerat. Proin semper consequat ultricies. Vivamus condimentum tortor ac quam tristique, eget rhoncus arcu suscipit.</p>
                             </div>
@@ -186,8 +184,8 @@
                                 <div class="info">
                                     <!-- CONTAINER MID -->
                                     <div class="container-mid">
-                                        <h5>Surf 71</h5>
-                                        <p>Product Design</p>
+                                        <h5>Visual Art</h5>
+                                        <p>f13, artwork</p>
                                     </div>
                                     <!-- /CONTAINER MID -->
                                 </div>
@@ -199,8 +197,8 @@
                             <!-- LIGHTBOX -->
                             <div id="item-2-lightbox" class="work-lightbox">
                                 <img class="img-responsive" src="assets/img/work/item-2.jpg" alt="image">
-                                <h3>Surf 71</h3>
-                                <p class="subline">Product Design</p>
+                                <h3>Visual Art</h3>
+                                <p class="subline">f13, artwork</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper faucibus eros, quis imperdiet sapien. Nam sodales nec risus nec interdum. Proin lobortis, ex condimentum ultricies eleifend, nisl nunc sollicitudin odio, eget egestas est turpis et metus. In non ligula quis mauris rutrum porta.</p>
                                 <p>Integer scelerisque et orci in maximus. Nullam ac finibus nisi. Sed libero tellus, fringilla in posuere vitae, sollicitudin consectetur odio. Morbi pharetra tortor quis risus hendrerit, ut tincidunt arcu vehicula. Integer consequat lorem nisl, sit amet euismod libero fringilla placerat. Proin semper consequat ultricies. Vivamus condimentum tortor ac quam tristique, eget rhoncus arcu suscipit.</p>
                             </div>
@@ -216,8 +214,8 @@
                                 <div class="info">
                                     <!-- CONTAINER MID -->
                                     <div class="container-mid">
-                                        <h5>Game Nation</h5>
-                                        <p>Marketing</p>
+                                        <h5>High Tech</h5>
+                                        <!-- <p>Marketing</p> -->
                                     </div>
                                     <!-- /CONTAINER MID -->
                                 </div>
@@ -229,8 +227,8 @@
                             <!-- LIGHTBOX -->
                             <div id="item-3-lightbox" class="work-lightbox">
                                 <img class="img-responsive" src="assets/img/work/item-3.jpg" alt="image">
-                                <h3>Game Nation</h3>
-                                <p class="subline">Marketing</p>
+                                <h3>High Tech</h3>
+                                <p class="subline">Enter Subtitle please</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper faucibus eros, quis imperdiet sapien. Nam sodales nec risus nec interdum. Proin lobortis, ex condimentum ultricies eleifend, nisl nunc sollicitudin odio, eget egestas est turpis et metus. In non ligula quis mauris rutrum porta.</p>
                                 <p>Integer scelerisque et orci in maximus. Nullam ac finibus nisi. Sed libero tellus, fringilla in posuere vitae, sollicitudin consectetur odio. Morbi pharetra tortor quis risus hendrerit, ut tincidunt arcu vehicula. Integer consequat lorem nisl, sit amet euismod libero fringilla placerat. Proin semper consequat ultricies. Vivamus condimentum tortor ac quam tristique, eget rhoncus arcu suscipit.</p>
                             </div>
@@ -239,56 +237,38 @@
                         <!-- /ITEM -->
                         
                         <!-- ITEM -->
-                        <div class="item scroll-animated">
+                        <!-- <div class="item scroll-animated"> -->
                             <!-- LIGHTBOX LINK -->
-                            <a href="#" data-featherlight="#item-4-lightbox">
+                            <!-- <a href="#" data-featherlight="#item-4-lightbox"> -->
                                 <!-- INFO -->
-                                <div class="info">
+                                <!-- <div class="info"> -->
                                     <!-- CONTAINER MID -->
-                                    <div class="container-mid">
-                                        <h5>Cronomax</h5>
-                                        <p>UI/UX DESIGN</p>
-                                    </div>
+                                    <!-- <div class="container-mid"> -->
+                                        <!-- <h5>Cronomax</h5> -->
+                                        <!-- <p>UI/UX DESIGN</p> -->
+                                    <!-- </div> -->
                                     <!-- /CONTAINER MID -->
-                                </div>
+                                <!-- </div> -->
                                 <!-- /INFO -->
-                                <div class="background-image" style="background-image: url(assets/img/work/item-4.jpg)"></div>
-                            </a>
+                                <!-- <div class="background-image" style="background-image: url(assets/img/work/item-4.jpg)"></div> -->
+                            <!-- </a> -->
                             <!-- /LIGHTBOX LINK -->
                             
                             <!-- LIGHTBOX -->
-                            <div id="item-4-lightbox" class="work-lightbox">
-                                <img class="img-responsive" src="assets/img/work/item-4.jpg" alt="image">
-                                <h3>Cronomax</h3>
-                                <p class="subline">UI/UX DESIGN</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper faucibus eros, quis imperdiet sapien. Nam sodales nec risus nec interdum. Proin lobortis, ex condimentum ultricies eleifend, nisl nunc sollicitudin odio, eget egestas est turpis et metus. In non ligula quis mauris rutrum porta.</p>
-                                <p>Integer scelerisque et orci in maximus. Nullam ac finibus nisi. Sed libero tellus, fringilla in posuere vitae, sollicitudin consectetur odio. Morbi pharetra tortor quis risus hendrerit, ut tincidunt arcu vehicula. Integer consequat lorem nisl, sit amet euismod libero fringilla placerat. Proin semper consequat ultricies. Vivamus condimentum tortor ac quam tristique, eget rhoncus arcu suscipit.</p>
-                            </div>
+                            <!-- <div id="item-4-lightbox" class="work-lightbox"> -->
+                                <!-- <img class="img-responsive" src="assets/img/work/item-4.jpg" alt="image"> -->
+                                <!-- <h3>Cronomax</h3> -->
+                                <!-- <p class="subline">UI/UX DESIGN</p> -->
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper faucibus eros, quis imperdiet sapien. Nam sodales nec risus nec interdum. Proin lobortis, ex condimentum ultricies eleifend, nisl nunc sollicitudin odio, eget egestas est turpis et metus. In non ligula quis mauris rutrum porta.</p> -->
+                                <!-- <p>Integer scelerisque et orci in maximus. Nullam ac finibus nisi. Sed libero tellus, fringilla in posuere vitae, sollicitudin consectetur odio. Morbi pharetra tortor quis risus hendrerit, ut tincidunt arcu vehicula. Integer consequat lorem nisl, sit amet euismod libero fringilla placerat. Proin semper consequat ultricies. Vivamus condimentum tortor ac quam tristique, eget rhoncus arcu suscipit.</p> -->
+                            <!-- </div> -->
                             <!-- /LIGHTBOX -->
-                        </div>
+                        <!-- </div> -->
                         <!-- /ITEM -->
                     </div>
                     <!-- /SHOWCASE -->
                 </section>
                 <!-- /WORK -->
-                
-                <!-- CONTACT -->
-                <!-- <section id="contact"> -->
-                    <!-- <h3 class="headline scroll-animated">Contact Me</h3> -->
-                    <!-- CONTACT FORM --> 
-                    <!-- <form id="contact-form" action="assets/php/contact.php" method="post"> -->
-                        <!-- <input id="contact-form-name" type="text" name="name" class="form-control scroll-animated" placeholder="* Your Name"> -->
-                        <!-- <input id="contact-form-email" type="text" name="email" class="form-control scroll-animated" placeholder="* Your Email"> -->
-                        <!-- PHANTOM ELEMENT ( HONEYPOT CAPTCHA FOR SECURITY ) -->
-                        <!-- <div class="fhp-input"><input id="contact-form-company" type="text" name="company" class="form-control"></div> -->
-                        <!-- /PHANTOM ELEMENT ( HONEYPOT CAPTCHA FOR SECURITY ) -->
-                        <!-- <textarea id="contact-form-message" name="message" class="form-control scroll-animated" placeholder="* Your Message"></textarea> -->
-                        <!-- <button type="submit" class="form-control scroll-animated">Send Message<div class="circle"><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i></div></button> -->
-                        <!-- <div class="success-message"><i class="fa fa-check" aria-hidden="true"></i>The Email was Sent Successfully!</div> -->
-                    <!-- </form> -->
-                    <!-- /CONTACT FORM --> 
-                <!-- </section> -->
-                <!-- /CONTACT -->
                 
                 <!-- FOOTER -->
                 <section id="footer">
