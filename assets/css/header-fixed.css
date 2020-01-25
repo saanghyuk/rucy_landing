@@ -116,16 +116,17 @@ body.fixed .header-fixed .header-limiter nav {
 	}
 
 	.header-fixed .header-limiter nav {
-		line-height: 1;
-		float:none;
+		display: none;
+		/* line-height: 1;
+		float:none; */
 	}
 
-	.header-fixed .header-limiter nav a {
+	/* .header-fixed .header-limiter nav a {
 		font-size: 13px;
 	}
 
 	body.fixed .header-fixed {
 		display: none;
-	}
+	} */
 
 }

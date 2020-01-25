@@ -11,9 +11,10 @@
     --  04. Content Area
     --  05. Content Area --> Intro
     --  06. Content Area --> What We Do
-    --  07. Content Area --> About
-    --  08. Content Area --> Our Team
-    --  09. Content Area --> Footer
+    --  07. Content Area --> Store
+    --  08. Content Area --> About
+    --  09. Content Area --> Our Team
+    --  10. Content Area --> Footer
  
  
  ******************************************************************/
@@ -244,9 +245,9 @@ button
     height: 100%;
 }
 
-.image-container .background-img
+.image-container .background-area
 {
-    position: absolute;
+	position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
@@ -257,11 +258,19 @@ button
     -webkit-transition: opacity 1s ease;
          -o-transition: opacity 1s ease;
             transition: opacity 1s ease;
+}
 
-    background: url(../img/background.jpg);
+.image-container .background-img
+{
+	background: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 	background-position: center center;
+}
+
+.image-container .background-filter
+{
+	background: rgba(0, 0, 0, 0.2);
 }
 
 
@@ -527,7 +536,17 @@ button
 
 
 
-/** 7. Content Area --> About
+/** 7. Content Area --> Store
+*******************************************************************/
+
+#store p
+{
+	margin: 1rem 0 1.6rem;
+}
+
+
+
+/** 8. Content Area --> About
 *******************************************************************/
 
 #about .services-list
@@ -603,7 +622,7 @@ button
 
 
 
-/** 8. Content Area --> Our Team
+/** 9. Content Area --> Our Team
 *******************************************************************/
 
 #team .showcase .item
@@ -820,7 +839,7 @@ button
 }
 
 
-/** 09. Content Area --> Footer
+/** 10. Content Area --> Footer
 *******************************************************************/
 
 #footer .social-icons
@@ -903,7 +922,12 @@ button
 
 #footer p
 {
-    margin-top: 2em;
+    margin-top: 1.6em;
+	font-size: 1.4rem;
+}
+
+#footer p span.info
+{
 }
 
 #footer p a
