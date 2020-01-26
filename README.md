@@ -2,12 +2,15 @@
 
 JIWOON WON, SANGHYUK SON
 
+# Github Page
+ 
+https://jwwon.github.io/rucy_landing/
+
 # Current Progress
 
 * Navigation Bar 생성
  * [x] 상황에 따라 다른 로고 적용
  * [x] 메뉴 클릭 시 smooth scroll로 앵커까지 이동
- * [ ] 모바일에 햄버거 버튼 적용
 * QR 코드 및 링크 추가
  * [x] Google Play
  * [x] App Store
