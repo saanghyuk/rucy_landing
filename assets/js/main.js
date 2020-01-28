@@ -3,10 +3,12 @@ jQuery(window).on('load', function() {
     
     
     // HIDE PRELOADER
-	
-	window.setTimeout(function() {
-		$(".preloader").addClass("hide-preloader");		   
-   }, 1200);
+	setTimeout(function() {
+		$(".preloader").addClass("hide-preloader");
+		setTimeout(function() {
+			$(".preloader").addClass("remove-preloader");
+		}, 700);
+   	}, 1200);
     
     // SHOW/ANIMATE ANIMATION CONTAINER
     setTimeout(function(){
