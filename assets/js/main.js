@@ -45,6 +45,13 @@ jQuery(document).ready(function($) {
         }, 500);
         
     });
+	
+	$(document).on('click', 'a.scroll-to-top', function(event) {
+		event.preventDefault();
+		$('html, body').animate({
+			scrollTop: 0
+		}, 500);
+	})
     
     
     // SCROLL REVEAL SETUP

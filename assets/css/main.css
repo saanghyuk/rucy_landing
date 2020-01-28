@@ -83,12 +83,12 @@ h5
 
 h6
 {
-    font-size: 1.9rem;
+    font-size: 2.1rem;
 }
 
 p
 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 1.7em;
 }
 
@@ -211,7 +211,7 @@ button
 
 .image-container .background-img
 {
-	background: url(../img/background.jpg);
+	background: url(../img/jwwon_background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 	background-position: center center;
@@ -491,6 +491,7 @@ button
 #store p
 {
 	margin: 1rem 0 1.6rem;
+	font-size: 1.8rem;
 }
 
 
@@ -612,12 +613,12 @@ button
 
     color: #fff;
     background: #fff;
-    background: -webkit-linear-gradient(left, rgba(143,151,219,1) 1%,rgba(0,0,0,0) 100%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(1%, rgba(143,151,219,1)),to(rgba(0,0,0,0)));
-    background:      -o-linear-gradient(left, rgba(143,151,219,1) 1%,rgba(0,0,0,0) 100%);
-    background:         linear-gradient(to right, rgba(143,151,219,1) 1%,rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(left, rgba(251,204,10,1) 1%,rgba(0,0,0,0) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(1%, rgba(251,204,10,1)),to(rgba(0,0,0,0)));
+    background:      -o-linear-gradient(left, rgba(251,204,10,1) 1%,rgba(0,0,0,0) 100%);
+    background:         linear-gradient(to right, rgba(251,204,10,1) 1%,rgba(0,0,0,0) 100%);
 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f97db', endColorstr='#00000000',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbcc0a', endColorstr='#00000000',GradientType=1 );
 }
 
 #team .showcase .item:hover .info
@@ -728,7 +729,7 @@ button
     padding: 0;
 
     border-bottom: 0;
-    background: rgba(140, 148, 216, .7);
+    background: rgba(251,204,10,.7);
 }
 
 .featherlight .featherlight-content  .featherlight-close-icon
@@ -871,14 +872,14 @@ button
 
 #footer .wechat-icon
 {
-	width: 28%;
+	width: 100%;
 	margin-bottom: 0.8rem;
 }
 
 #footer p
 {
     margin-top: 1.6em;
-	font-size: 1.4rem;
+	font-size: 1.7rem;
 }
 
 #footer p span.info
