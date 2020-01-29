@@ -877,13 +877,13 @@ button
 
 #footer .global-page-wrapper
 {
-	margin: 1.6em 0 1em;
+	padding: 1.6em 0 1em;
 }
 
 #footer .global-page-button
 {
 	min-width: 12.6em;
-	max-width: 18em;
+	max-width: 16em;
 	padding: 0.6em 0;
 	border: 1px solid #fff;
 	display: flex;
@@ -893,18 +893,18 @@ button
 
 #footer .global-page-button p
 {
-	margin: 0;	
+	margin: 0;
 }
 
 #footer .global-page-button .icon-next
 {
 	margin-left: 0.4em;
-	width: 1.15em;
+	width: 1.2em;
 	height: 0.9em;
 	
 	background: url(../img/icon/next_white.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 	background-position: center center;
 }
 
@@ -922,7 +922,7 @@ button
 {
 	background: url(../img/icon/next_black.png);
 	background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 	background-position: center center;
 	
 	-webkit-transition-delay: .12s;
