@@ -794,8 +794,7 @@ button
 
 #footer .social-icons
 {
-    padding: 0;
-
+	padding: 0;
     list-style: none;
 }
 
@@ -876,10 +875,15 @@ button
 	width: 100%;
 }
 
+#footer .global-page-wrapper
+{
+	margin: 1.6em 0 1em;
+}
+
 #footer .global-page-button
 {
-	margin: 0.6em 0 1em;
-	width: 16.4em;
+	min-width: 12.6em;
+	max-width: 18em;
 	padding: 0.6em 0;
 	border: 1px solid #fff;
 	display: flex;
@@ -936,4 +940,9 @@ button
 {
     margin-top: 1.6em;
 	font-size: 1.7rem;
+}
+
+#footer span.strict
+{
+	white-space: nowrap;
 }
