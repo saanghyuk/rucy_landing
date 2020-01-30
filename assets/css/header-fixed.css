@@ -1,0 +1,123 @@
+/* header height: 110px */
+
+.header-fixed {
+	padding: 20px 40px;
+	height: 110px;
+	color: #ffffff;
+	box-sizing: border-box;
+	top:-100px;
+
+	-webkit-transition:top 0.3s;
+	transition:top 0.3s;
+}
+
+.header-fixed .header-limiter {
+	max-width: 1200px;
+	text-align: center;
+	margin: 0 auto;
+	height: 100%;
+}
+
+/*	The header placeholder. It is displayed when the header is fixed to the top of the
+	browser window, in order to prevent the content of the page from jumping up. */
+
+.header-fixed-placeholder{
+	height: 110px;
+	display: none;
+}
+
+/* Logo */
+
+.header-fixed .header-limiter .header-logo {
+	float: left;
+	width: 70px;
+	height: 100%;
+	margin: 0;
+	background: url(../img/logo/rucy_min_dark.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* The navigation links */
+
+.header-fixed .header-limiter a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.header-fixed .header-limiter nav {
+	font:16px Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	float: right;
+}
+
+.header-fixed .header-limiter nav a{
+	display: inline-block;
+	padding: 0 8px;
+	text-decoration:none;
+	opacity: 0.9;
+}
+
+.header-fixed .header-limiter nav a:hover{
+	opacity: 1;
+}
+
+.header-fixed .header-limiter nav a.selected {
+	text-decoration: underline;
+	pointer-events: none;
+	opacity: 1;
+}
+
+/* Fixed version of the header */
+
+body.fixed .header-fixed {
+	padding: 10px 40px;
+	height: 50px;
+	position: fixed;
+	width: 100%;
+	background-color:#ffffff;
+	/* box-shadow:0 1px 1px #333; */
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+body.fixed .header-fixed-placeholder {
+	display: block;
+}
+
+body.fixed .header-fixed .header-limiter .header-logo {
+	width: 60px;
+}
+
+body.fixed .header-fixed .header-limiter nav {
+	line-height: 28px;
+	font-size: 13px;
+}
+
+
+/* Making the header responsive */
+
+@media all and (max-width: 600px) {
+
+	.header-fixed {
+		padding: 20px;
+		width: 100%;
+		height: 60px;
+	}
+
+	.header-fixed .header-limiter nav {
+		display: none;
+	}
+
+	body.fixed .header-fixed {
+		padding: 16px 20px;
+		height: 50px;
+		background: #ffffff;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+
+}

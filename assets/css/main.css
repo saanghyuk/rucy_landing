@@ -10,10 +10,10 @@
     --  03. Image Container
     --  04. Content Area
     --  05. Content Area --> Intro
-    --  06. Content Area --> About
-    --  07. Content Area --> Service
-    --  08. Content Area --> Work
-    --  09. Content Area --> Contact
+    --  06. Content Area --> What We Do
+    --  07. Content Area --> Store
+    --  08. Content Area --> About
+    --  09. Content Area --> Our Team
     --  10. Content Area --> Footer
  
  
@@ -83,12 +83,12 @@ h5
 
 h6
 {
-    font-size: 1.9rem;
+    font-size: 2.1rem;
 }
 
 p
 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 1.7em;
 }
 
@@ -149,86 +149,35 @@ button
     position: fixed;
     z-index: 100000;
     top: 0;
-    right: 0;
-
-    overflow: hidden;
+    left: 0;
 
     width: 100%;
     height: 100%;
 
-    background: #fff;
+    background: #fafafa;
+	
+	/* Use flexbox for centerize children element */	
+	display: flex;
+	justify-content: center;
 }
 
 .preloader.hide-preloader
 {
-    width: 0;
+	opacity: 0;
 
     -webkit-transition: .7s ease .3s;
          -o-transition: .7s ease .3s;
             transition: .7s ease .3s;
 }
 
-.preloader .spinner
+.preloader.remove-preloader
 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    display: block;
-
-    width: 50px;
-    height: 50px;
-    margin-top: -25px;
-    margin-left: -25px;
-
-    -webkit-animation: spinner-pulse .6s infinite ease-in-out;
-            animation: spinner-pulse .6s infinite ease-in-out;
-    text-align: center;
-
-    opacity: 1;
-    border-radius: 100%;
-    background-color: #111;
+	display: none;
 }
 
-.preloader.hide-preloader .spinner
-{
-    -webkit-transition: .3s ease;
-         -o-transition: .3s ease;
-            transition: .3s ease;
-
-    opacity: 0;
+.preloader .animation {
+	height: 100%;
 }
-
-@-webkit-keyframes spinner-pulse
-{
-    0%
-    {
-        -webkit-transform: scale(0);
-    }
-    100%
-    {
-        -webkit-transform: scale(1.0);
-
-        opacity: 0;
-    }
-}
-
-@keyframes spinner-pulse
-{
-    0%
-    {
-        -webkit-transform: scale(0);
-                transform: scale(0);
-    }
-    100%
-    {
-        -webkit-transform: scale(1.0);
-                transform: scale(1.0);
-
-        opacity: 0;
-    }
-}
-
 
 
 /** 3. Image Container
@@ -245,9 +194,9 @@ button
     height: 100%;
 }
 
-.image-container .background-img
+.image-container .background-area
 {
-    position: absolute;
+	position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
@@ -258,10 +207,19 @@ button
     -webkit-transition: opacity 1s ease;
          -o-transition: opacity 1s ease;
             transition: opacity 1s ease;
+}
 
-    background: url(../img/background.jpg);
+.image-container .background-img
+{
+	background: url(../img/jwwon_background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+	background-position: center center;
+}
+
+.image-container .background-filter
+{
+	background: rgba(0, 0, 0, 0.2);
 }
 
 
@@ -507,30 +465,41 @@ button
 
 
 
-/** 6. Content Area --> About
+/** 6. Content Area --> What We Do
 *******************************************************************/
 
-#about p
+#what p
 {
     margin-bottom: 2.2em;
 }
 
-#about p:last-child
+#what p:last-child
 {
     margin-bottom: 0;
 }
 
-#about .clients img
+#what .row img
 {
     margin-top: 3rem;
 }
 
 
 
-/** 7. Content Area --> Service
+/** 7. Content Area --> Store
 *******************************************************************/
 
-#service .services-list
+#store p
+{
+	margin: 1rem 0 1.6rem;
+	font-size: 1.8rem;
+}
+
+
+
+/** 8. Content Area --> About
+*******************************************************************/
+
+#about .services-list
 {
     margin-bottom: 0;
     padding: 0;
@@ -538,12 +507,12 @@ button
     list-style: none;
 }
 
-#service .services-list li
+#about .services-list li
 {
     display: block;
 }
 
-#service .services-list li button
+#about .services-list li button
 {
     font-size: 2.4rem;
     font-size: 2rem;
@@ -565,7 +534,7 @@ button
     border-radius: 0;
 }
 
-#service .services-list li button:after
+#about .services-list li button:after
 {
     font: normal normal normal 14px/1 FontAwesome;
     font-size: 1.7rem;
@@ -582,7 +551,7 @@ button
     color: #fff;
 }
 
-#service .services-list li .well
+#about .services-list li .well
 {
     min-height: 20px;
     margin-bottom: 0;
@@ -603,10 +572,10 @@ button
 
 
 
-/** 8. Content Area --> Work
+/** 9. Content Area --> Our Team
 *******************************************************************/
 
-#work .showcase .item
+#team .showcase .item
 {
     position: relative;
 
@@ -623,12 +592,12 @@ button
     background: #111;
 }
 
-#work .showcase .item:last-child
+#team .showcase .item:last-child
 {
     margin-bottom: 0;
 }
 
-#work .showcase .item .info
+#team .showcase .item .info
 {
     position: absolute;
     z-index: 100;
@@ -644,20 +613,20 @@ button
 
     color: #fff;
     background: #fff;
-    background: -webkit-linear-gradient(left, rgb(251, 204, 10) 1%,rgba(0,0,0,0) 100%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(1%, rgb(251, 204, 10)),to(rgba(0,0,0,0)));
-    background:      -o-linear-gradient(left, rgb(251, 204, 10) 1%,rgba(0,0,0,0) 100%);
-    background:         linear-gradient(to right, rgb(251, 204, 10) 1%,rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(left, rgba(251,204,10,1) 1%,rgba(0,0,0,0) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(1%, rgba(251,204,10,1)),to(rgba(0,0,0,0)));
+    background:      -o-linear-gradient(left, rgba(251,204,10,1) 1%,rgba(0,0,0,0) 100%);
+    background:         linear-gradient(to right, rgba(251,204,10,1) 1%,rgba(0,0,0,0) 100%);
 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f97db', endColorstr='#00000000',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbcc0a', endColorstr='#00000000',GradientType=1 );
 }
 
-#work .showcase .item:hover .info
+#team .showcase .item:hover .info
 {
     width: 100%;
 }
 
-#work .showcase .item .info .container-mid
+#team .showcase .item .info .container-mid
 {
     position: absolute;
     top: 50%;
@@ -671,7 +640,7 @@ button
             transform: translateY(-50%);
 }
 
-#work .showcase .item .info .container-mid h5
+#team .showcase .item .info .container-mid h5
 {
     margin: 0;
     margin-bottom: .2em;
@@ -684,7 +653,7 @@ button
     color: #fff;
 }
 
-#work .showcase .item:hover .info .container-mid h5
+#team .showcase .item:hover .info .container-mid h5
 {
     -webkit-transition: .15s ease .15s;
          -o-transition: .15s ease .15s;
@@ -696,7 +665,7 @@ button
     opacity: 1;
 }
 
-#work .showcase .item .info .container-mid p
+#team .showcase .item .info .container-mid p
 {
     position: relative;
 
@@ -711,7 +680,7 @@ button
     opacity: 0;
 }
 
-#work .showcase .item:hover .info .container-mid p
+#team .showcase .item:hover .info .container-mid p
 {
     -webkit-transition: .15s ease .2s;
          -o-transition: .15s ease .2s;
@@ -723,7 +692,7 @@ button
     opacity: 1;
 }
 
-#work .showcase .item .info .container-mid p:before
+#team .showcase .item .info .container-mid p:before
 {
     position: absolute;
     top: 50%;
@@ -740,7 +709,7 @@ button
     background: #fff;
 }
 
-#work .showcase .item .background-image
+#team .showcase .item .background-image
 {
     position: absolute;
     top: 0;
@@ -760,7 +729,7 @@ button
     padding: 0;
 
     border-bottom: 0;
-    background: rgba(251, 204, 10, 0.7);
+    background: rgba(251,204,10,.7);
 }
 
 .featherlight .featherlight-content  .featherlight-close-icon
@@ -820,255 +789,12 @@ button
 }
 
 
-
-/** 9. Content Area --> Contact
-*******************************************************************/
-
-#contact #contact-form
-{
-    position: relative;
-}
-
-#contact #contact-form .fhp-input
-{
-    display: none;
-
-    pointer-events: none;
-
-    opacity: 0;
-}
-
-#contact #contact-form input,
-#contact #contact-form textarea,
-#contact #contact-form button
-{
-    font-size: 2rem;
-
-    margin-bottom: 3.4vh;
-
-    -webkit-transition: .3s ease;
-         -o-transition: .3s ease;
-            transition: .3s ease;
-
-    color: #fff;
-    border: none;
-    border-bottom: 2px solid #fff;
-    border-radius: 0;
-    outline: none !important;
-    background: none;
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
-}
-
-#contact #contact-form.success input,
-#contact #contact-form.success textarea,
-#contact #contact-form.success button
-{
-    border: none;
-}
-
-#contact #contact-form.success input,
-#contact #contact-form.success textarea,
-#contact #contact-form.success button
-{
-    line-height: 0;
-
-    height: 0;
-    margin: 0;
-    padding: 0;
-
-    opacity: 0;
-}
-
-#contact #contact-form input::-webkit-input-placeholder,
-#contact #contact-form textarea::-webkit-input-placeholder
-{
-    color: #fff;
-}
-
-#contact #contact-form input:-ms-input-placeholder,
-#contact #contact-form textarea:-ms-input-placeholder
-{
-    color: #fff;
-}
-
-#contact #contact-form input::-ms-input-placeholder,
-#contact #contact-form textarea::-ms-input-placeholder
-{
-    color: #fff;
-}
-
-#contact #contact-form input::placeholder,
-#contact #contact-form textarea::placeholder
-{
-    color: #fff;
-}
-
-#contact #contact-form input.error,
-#contact #contact-form textarea.error
-{
-    border-color: red;
-}
-
-#contact #contact-form input
-{
-    line-height: 3.2em;
-
-    height: 3.4em;
-    padding: 0;
-}
-
-#contact #contact-form textarea
-{
-    line-height: 1.7em;
-
-    min-width: 100%;
-    max-width: 100%;
-    height: 8em;
-    margin-bottom: 4.4rem;
-    padding: 0;
-    padding-top: 1em;
-}
-
-#contact #contact-form button
-{
-    line-height: 3.2em;
-
-    position: relative;
-
-    display: inline-block;
-    overflow: hidden;
-
-    width: auto;
-    height: 3.2em;
-    margin-bottom: 0;
-    padding: 0;
-
-    border: none !important;
-    background: none !important;
-}
-
-#contact #contact-form button .circle
-{
-    font-size: 1em;
-    line-height: 5rem;
-
-    position: relative;
-
-    display: inline-block;
-    overflow: hidden;
-
-    width: 5rem;
-    height: 5rem;
-    margin-left: 1em;
-
-    vertical-align: middle;
-
-    border: 2px solid #fff;
-    border-radius: 100%;
-}
-
-#contact #contact-form button .circle i
-{
-    position: absolute;
-    top: 50%;
-    left: 0;
-
-    width: 100%;
-
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-    text-align: center;
-}
-
-#contact #contact-form button .circle i:first-child
-{
-    -webkit-transform: translate(-100%,-50%);
-        -ms-transform: translate(-100%,-50%);
-            transform: translate(-100%,-50%);
-}
-
-#contact #contact-form button:hover .circle i:first-child
-{
-    -webkit-transition: .15s ease;
-         -o-transition: .15s ease;
-            transition: .15s ease;
-    -webkit-transform: translate(0,-50%);
-        -ms-transform: translate(0,-50%);
-            transform: translate(0,-50%);
-}
-
-#contact #contact-form button .circle i:last-child
-{
-    -webkit-transform: translate(0,-50%);
-        -ms-transform: translate(0,-50%);
-            transform: translate(0,-50%);
-}
-
-#contact #contact-form button:hover .circle i:last-child
-{
-    -webkit-transition: .15s ease;
-         -o-transition: .15s ease;
-            transition: .15s ease;
-    -webkit-transform: translate(100%,-50%);
-        -ms-transform: translate(100%,-50%);
-            transform: translate(100%,-50%);
-}
-
-
-#contact #contact-form .success-message
-{
-    font-size: 2rem;
-    line-height: 0;
-
-    position: relative;
-    bottom: 0;
-    left: 0;
-
-    height: 0;
-    margin-top: -1.6em;
-    padding: 0 2em;
-
-    -webkit-transition: .2s ease;
-         -o-transition: .2s ease;
-            transition: .2s ease;
-    pointer-events: none;
-
-    opacity: 0;
-    color: #fff;
-    border: 2px solid limegreen;
-    border-radius: 0;
-    background: none;
-}
-
-#contact #contact-form.success .success-message
-{
-    line-height: 6em;
-
-    height: 6em;
-
-    pointer-events: all;
-
-    opacity: 1;
-}
-
-#contact #contact-form .success-message i
-{
-    font-size: 2.4rem;
-
-    margin-right: .7em;
-}
-
-
-
 /** 10. Content Area --> Footer
 *******************************************************************/
 
 #footer .social-icons
 {
-    padding: 0;
-
+	padding: 0;
     list-style: none;
 }
 
@@ -1101,13 +827,13 @@ button
     background: none;
 }
 
-#footer .social-icons li a i
+#footer .social-icons li a img
 {
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 25%;
 
-    width: 100%;
+    width: 50%;
 
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -1115,12 +841,12 @@ button
     text-align: center;
 }
 
-#footer .social-icons li a i:first-child
+#footer .social-icons li a img:first-child
 {
     top: -50%;
 }
 
-#footer .social-icons li a:hover i:first-child
+#footer .social-icons li a:hover img:first-child
 {
     top: 50%;
 
@@ -1129,12 +855,12 @@ button
             transition: .15s ease;
 }
 
-#footer .social-icons li a i:last-child
+#footer .social-icons li a img:last-child
 {
     top: 50%;
 }
 
-#footer .social-icons li a:hover i:last-child
+#footer .social-icons li a:hover img:last-child
 {
     top: 150%;
 
@@ -1143,13 +869,80 @@ button
             transition: .15s ease;
 }
 
-#footer p
+#footer .wechat-icon
 {
-    margin-top: 2em;
+	margin: 1.6em 0 0.8em;
+	width: 100%;
 }
 
-#footer p a
+#footer .global-page-wrapper
 {
-    color: #fff;
-    border-bottom: 1px solid #eee;
+	padding: 1.6em 0 1em;
+}
+
+#footer .global-page-button
+{
+	min-width: 12.6em;
+	max-width: 16em;
+	padding: 0.6em 0;
+	border: 1px solid #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#footer .global-page-button p
+{
+	margin: 0;
+}
+
+#footer .global-page-button .icon-next
+{
+	margin-left: 0.4em;
+	width: 1.2em;
+	height: 0.9em;
+	
+	background: url(../img/icon/next_white.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+	background-position: center center;
+}
+
+#footer .global-page-button:hover
+{
+	background: #fff;
+	color: #000;
+	
+	-webkit-transition: .3s ease;
+	 -o-transition: .3s ease;
+		transition: .3s ease;
+}
+
+#footer .global-page-button:hover .icon-next
+{
+	background: url(../img/icon/next_black.png);
+	background-repeat: no-repeat;
+    background-size: contain;
+	background-position: center center;
+	
+	-webkit-transition-delay: .12s;
+	-o-transition-delay: .12s;
+	transition-delay: .12s;
+}
+
+
+#footer .nested-content
+{
+	padding-top: 1em;
+}
+
+#footer p
+{
+    margin-top: 1.6em;
+	font-size: 1.7rem;
+}
+
+#footer span.strict
+{
+	white-space: nowrap;
 }
