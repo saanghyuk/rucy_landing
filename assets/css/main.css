@@ -772,7 +772,7 @@ button
     max-width: 900px;
     padding: 9vh 8vh;
 
-    text-align: right;
+    text-align: left;
 }
 
 .featherlight .featherlight-content .work-lightbox img
@@ -783,6 +783,7 @@ button
 .featherlight .featherlight-content .work-lightbox h3
 {
     margin-bottom: .2em;
+	text-align: center;
 }
 
 .featherlight .featherlight-content .work-lightbox p.subline
@@ -790,6 +791,7 @@ button
     margin-bottom: 1.6em;
 
     letter-spacing: .025em;
+	text-align: center;
 }
 
 .featherlight .featherlight-content .work-lightbox p
