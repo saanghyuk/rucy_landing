@@ -786,6 +786,11 @@ button
 	text-align: center;
 }
 
+.featherlight .featherlight-content .work-lightbox h5
+{
+	text-align: center;
+}
+
 .featherlight .featherlight-content .work-lightbox p.subline
 {
     margin-bottom: 1.6em;
