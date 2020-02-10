@@ -746,6 +746,7 @@ button
 
     border-bottom: 0;
     background: #fff;
+    opacity:0.75;
 }
 
 .featherlight .featherlight-content  .featherlight-close-icon
