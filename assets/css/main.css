@@ -745,11 +745,12 @@ button
     padding: 0;
 
     border-bottom: 0;
-    background: rgba(251,204,10,.7);
+    background: #fff;
 }
 
 .featherlight .featherlight-content  .featherlight-close-icon
 {
+
     font-size: 2.8rem;
     line-height: 2em;
 
@@ -761,8 +762,8 @@ button
     -webkit-transform: translate(50%,-50%);
         -ms-transform: translate(50%,-50%);
             transform: translate(50%,-50%);
-
-    color: #fff;
+    /*2/8 수정*/
+    color: #000000;
     outline: none !important;
     background: none;
 }
@@ -771,6 +772,8 @@ button
 {
     max-width: 900px;
     padding: 9vh 8vh;
+    /*2/10 폰트 컬러 수정*/
+    color:#000000;
 
     text-align: left;
 }
@@ -782,12 +785,16 @@ button
 
 .featherlight .featherlight-content .work-lightbox h3
 {
+    /*2/8수정*/
+    color: #000000;
     margin-bottom: .2em;
 	text-align: center;
 }
 
 .featherlight .featherlight-content .work-lightbox h5
 {
+    /*2/8수정*/
+    color: #000000;
 	text-align: center;
 }
 
