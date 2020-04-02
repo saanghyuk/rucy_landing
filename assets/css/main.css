@@ -132,7 +132,7 @@ button {
 
 .preloader {
   position: fixed;
-  z-index: 100000;
+  z-index: 999;
   top: 0;
   left: 0;
 
@@ -174,8 +174,9 @@ button {
 
 .preloader #skip {
   position: absolute;
+  z-index: 9999;
   bottom: 3.2em;
-  right: 3.2em;
+  right: 2.4em;
 
   width: 10em;
 

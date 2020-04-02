@@ -9,21 +9,20 @@ jQuery(window).on("load", function() {
   }
 
   // select video by random
-  const rand = Math.random();
+  const index = Math.random() < 0.5 ? 1 : 2;
 
   setTimeout(function() {
     $(".preloader #skip").css({ visibility: "visible" });
   }, 3600);
 
-  $(`.preloader video:nth-child(${rand < 0.5 ? 1 : 2})`).css({
-    display: "none"
-  });
+  $(".preloader").append(`<video autoplay muted>
+    <source src="assets/video/preview_${index}.mp4" type="video/mp4" />
+    Sorry, your browser doesn't support embedded video
+  </video>`);
+
   // set event listener
   $(".preloader #skip").on("click", hidePreloader);
-  $(`.preloader video:nth-child(${rand < 0.5 ? 2 : 1})`).on(
-    "pause",
-    hidePreloader
-  );
+  $(".preloader video").on("pause", hidePreloader);
 
   // SHOW/ANIMATE ANIMATION CONTAINER
   setTimeout(function() {
