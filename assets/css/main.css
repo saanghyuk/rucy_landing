@@ -160,7 +160,7 @@ button {
 
   width: 10em;
 
-  padding: 0 0.8em;
+  padding: 0 0.6em;
   border: 1px solid white;
   background: rgba(0, 0, 0, 0.1);
 
@@ -175,10 +175,6 @@ button {
   visibility: hidden;
 }
 
-.preloader #skip:hover {
-  cursor: pointer;
-}
-
 .preloader #skip .icon-next {
   margin-left: 0.4em;
   width: 1.2em;
@@ -188,6 +184,28 @@ button {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
+}
+
+.preloader #skip:hover {
+  cursor: pointer;
+  background: white;
+  color: black;
+  border-color: rgba(18, 18, 18, 0.4);
+
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.preloader #skip:hover .icon-next {
+  background: url(../img/icon/next_black.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+
+  -webkit-transition-delay: 0.12s;
+  -o-transition-delay: 0.12s;
+  transition-delay: 0.12s;
 }
 
 /** 3. Image Container

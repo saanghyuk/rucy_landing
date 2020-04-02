@@ -1,14 +1,6 @@
 jQuery(window).on("load", function() {
   "use strict";
 
-  // HIDE PRELOADER
-  // setTimeout(function() {
-  // 	$(".preloader").addClass("hide-preloader");
-  // 	setTimeout(function() {
-  // 		$(".preloader").addClass("remove-preloader");
-  // 	}, 700);
-  // }, 1200);
-
   function hidePreloader() {
     $(".preloader").addClass("hide-preloader");
     setTimeout(function() {
@@ -16,12 +8,22 @@ jQuery(window).on("load", function() {
     }, 700);
   }
 
+  // select video by random
+  const rand = Math.random();
+
   setTimeout(function() {
     $(".preloader #skip").css({ visibility: "visible" });
   }, 3600);
 
+  $(`.preloader video:nth-child(${rand < 0.5 ? 1 : 2})`).css({
+    display: "none"
+  });
+  // set event listener
   $(".preloader #skip").on("click", hidePreloader);
-  $(".preloader video").on("pause", hidePreloader);
+  $(`.preloader video:nth-child(${rand < 0.5 ? 2 : 1})`).on(
+    "pause",
+    hidePreloader
+  );
 
   // SHOW/ANIMATE ANIMATION CONTAINER
   setTimeout(function() {
