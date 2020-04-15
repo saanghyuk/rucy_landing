@@ -180,7 +180,7 @@ button {
 
   width: 10em;
 
-  padding: 0 0.6em;
+  padding: 0.3em 0.6em;
   border: 1px solid white;
   background: rgba(0, 0, 0, 0.1);
 
@@ -193,6 +193,10 @@ button {
   align-items: center;
 
   visibility: hidden;
+}
+
+.preloader #skip p {
+  margin: 0;
 }
 
 .preloader #skip .icon-next {
