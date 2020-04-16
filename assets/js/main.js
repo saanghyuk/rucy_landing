@@ -1,23 +1,31 @@
-jQuery(window).on("load", function() {
+jQuery(window).on("load", function () {
   "use strict";
 
   function hidePreloader() {
     $(".preloader").addClass("hide-preloader");
-    setTimeout(function() {
+    setTimeout(function () {
       $(".preloader").addClass("remove-preloader");
     }, 700);
   }
 
   // select video by random
-  const index = Math.random() < 0.5 ? 1 : 2;
+  const index = Math.floor(Math.random() * 3) + 1;
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(
+    navigator.userAgent
+  )
+    ? true
+    : false;
+  const baseURL = "https://rucy-website.oss-cn-beijing.aliyuncs.com/min";
+  const path = isMobile ? "mobile10s_" : "rucychina_web";
 
-  setTimeout(function() {
+  setTimeout(function () {
     $(".preloader #skip").css({ visibility: "visible" });
   }, 3600);
 
-  $(".preloader").append(`<video autoplay muted>
-    <source src="assets/video/preview_${index}.mp4" type="video/mp4" />
-    Sorry, your browser doesn't support embedded video
+  $(".preloader").append(`
+  <video autoplay muted>
+    <source src="${baseURL}/${path}${index}.mp4" type="video/mp4" />
+    抱歉，您的浏览器不支持嵌入式视频
   </video>`);
 
   // set event listener
@@ -25,37 +33,37 @@ jQuery(window).on("load", function() {
   $(".preloader video").on("pause", hidePreloader);
 
   // SHOW/ANIMATE ANIMATION CONTAINER
-  setTimeout(function() {
-    $("#intro .animation-container").each(function() {
+  setTimeout(function () {
+    $("#intro .animation-container").each(function () {
       var e = $(this);
 
-      setTimeout(function() {
+      setTimeout(function () {
         e.addClass("run-animation");
       }, e.data("animation-delay"));
     });
   }, 700);
 });
 
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
   "use strict";
 
   // SMOOTH SCROLL FOR SAME PAGE LINKS
-  $(document).on("click", "a.smooth-scroll", function(event) {
+  $(document).on("click", "a.smooth-scroll", function (event) {
     event.preventDefault();
 
     $("html, body").animate(
       {
-        scrollTop: $($.attr(this, "href")).offset().top - 80
+        scrollTop: $($.attr(this, "href")).offset().top - 80,
       },
       500
     );
   });
 
-  $(document).on("click", "a.scroll-to-top", function(event) {
+  $(document).on("click", "a.scroll-to-top", function (event) {
     event.preventDefault();
     $("html, body").animate(
       {
-        scrollTop: 0
+        scrollTop: 0,
       },
       500
     );
@@ -71,6 +79,6 @@ jQuery(document).ready(function($) {
     opacity: 0,
     distance: "20vh",
     viewFactor: 0.4,
-    scale: 1
+    scale: 1,
   });
 });
